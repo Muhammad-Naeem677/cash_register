@@ -56,4 +56,4 @@ class Cart
   end
 end
 
-Cart.start_shop
+# Cart.start_shop
