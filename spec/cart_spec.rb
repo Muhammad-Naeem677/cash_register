@@ -31,4 +31,13 @@ describe 'Cash Register' do
       expect(basket_price('CF1,CF1,CF1,CF1')).to be_between(30, 31)
     end
   end
+
+  describe 'Mix cart products' do
+    it 'Price for 3 strawberries and 1 Grean Tea should equal to 16.61€' do
+      expect(basket_price('SR1,SR1,GR1,SR1')).to eq(16.61)
+    end
+    it 'Price for 3 coffee, 1 Grean Tea and 1 strawberry should be between 30€ to 31€' do
+      expect(basket_price('GR1,CF1,SR1,CF1,CF1')).to be_between(30, 31)
+    end
+  end
 end
