@@ -39,3 +39,8 @@
    rspec <file path>
    rspec spec/cart_spec.rb in this case
    ```
+6. Added some flags in `.rspec` to view tests in better format
+   ```
+   --color
+   --format doc
+   ```
