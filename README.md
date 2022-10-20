@@ -28,3 +28,14 @@
    rspec --init
    ```
 3. Clean `spec_helper.rb`  and place only your concerned code
+
+4. Run tests using command
+   ```
+   rspec
+   ```
+   It'll execute all spec files in `spec` directory
+5. To run run specific file run
+   ```
+   rspec <file path>
+   rspec spec/cart_spec.rb in this case
+   ```
